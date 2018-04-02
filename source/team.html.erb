@@ -1,0 +1,14 @@
+<div class="wrapper">
+	<div class="container">
+		<div class="row">
+					<% [{name: "Juan Francisco Paredes ", image: "https://avatars1.githubusercontent.com/u/36811891?v=4", link: "https://kitt.lewagon.com/alumni/Nerfi"}, {name: "Giacomo Paolozzi", image: "https://avatars3.githubusercontent.com/u/35458184?v=4", link: "https://kitt.lewagon.com/alumni/th3cix"}].each do |user| %>
+								<div class="col-xs-12 col-sm-6">
+						<%= image_tag "#{user[:image]}", class: "img-circle reduce " %>
+						<h3><%= user[:name].capitalize %></h3>
+						<%= link_to "Read more", "#{user[:link]}", class: "btn btn-primary" %>
+					</div>
+					<% end %>
+				</ul>
+		</div>
+	</div>
+</div>
